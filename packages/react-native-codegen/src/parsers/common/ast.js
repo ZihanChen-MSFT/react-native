@@ -24,6 +24,8 @@ export type PrimitiveType =
   | 'string_literals';
 
 export type PredefinedType =
+  | 'Stringish'
+  | 'UnsafeObject'
   | 'RootTag'
   | 'ImageSource'
   | 'ColorValue'
@@ -54,7 +56,7 @@ export type WithDefaultType = {
 };
 
 export type FunctionType = {
-  type: 'promise',
+  type: 'function',
   returnType: Type,
   argumentTypes: Type[],
 };
