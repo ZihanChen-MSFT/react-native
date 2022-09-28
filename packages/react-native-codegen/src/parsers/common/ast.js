@@ -83,7 +83,7 @@ export type EnumType = {
 };
 
 export type EventType = {
-  type: 'bubble_event' | 'direct_event',
+  type: 'BubblingEventHandler' | 'DirectEventHandler',
   element: Type,
 };
 
