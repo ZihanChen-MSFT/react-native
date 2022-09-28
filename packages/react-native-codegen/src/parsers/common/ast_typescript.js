@@ -11,7 +11,9 @@
 'use strict';
 
 import * as ast from './ast';
-import type {File} from '@babel/types';
+import type {File, TSTypeAnnotation} from '@babel/types';
+
+export function parseType(type: TSTypeAnnotation):ast.Type {}
 
 export function parseFile(file: File): ast.File {}
 
